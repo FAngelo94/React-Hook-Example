@@ -1,12 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Input from './Input.jsx'
+import InputAlternative from './InputAlternative.jsx'
+import CustomHook from './CustomHook'
+import CounterProvider from './CounterProvider/CounterProvider'
 
 function App() {
+  const [value2, onChangeValue2] = React.useState("5");
+  function onChange(value){
+    onChangeValue2(value);
+
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Input value={value2} onChange={onChange} autofocus={true} />
+      <InputAlternative />
+      {value2==="5" 
+      ? <CustomHook /> 
+      : <p></p>
+      }
+      <CounterProvider />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
