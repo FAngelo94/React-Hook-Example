@@ -1,3 +1,9 @@
+# React Hook Example
+In this project I used hook. I made this examples during a Mikamai event.
+
+Link of the event that contain a lot of useful material: https://www.notion.so/React-Hookaton-27-06-2019-ReactJS-Milano-Meetup-1d0dc915cac7413fb0acbd1893c63368
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
